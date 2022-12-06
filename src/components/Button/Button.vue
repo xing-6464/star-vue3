@@ -4,12 +4,14 @@
     :class="classes"
     :href="props.href"
   >
+    <slot></slot>
   </a>
   <button
     v-else
     :disabled="props.disabled"
     :class="classes"
   >
+    <slot></slot>
   </button>
 </template>
 
@@ -17,8 +19,8 @@
 import { defineProps, withDefaults } from 'vue'
 import classNames from 'classnames'
 
-type ButtonSize = 'lg' | 'sm'
-type ButtonType = 'primary' | 'default' | 'danger' | 'link'
+export type ButtonSize = 'lg' | 'sm'
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 
 interface BaseButtonProps {
   className?: string

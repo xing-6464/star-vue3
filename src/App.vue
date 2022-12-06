@@ -1,27 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <header class="App-content">
-    <h1>Hello world</h1>
-  </header>
+  <Button>Hello</Button>
+  <Button btn-type="primary" size="lg">Hello</Button>
+  <Button btn-type="danger" size="sm">Hello</Button>
+  <Button btn-type="link" href="http://www.baidu.com">Hello</Button>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'App',
-  components: {
-  }
-})
+<script lang="ts" setup>
+import Button from './components/Button/Button.vue'
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+//   margin-top: 60px;
+// }
 </style>
