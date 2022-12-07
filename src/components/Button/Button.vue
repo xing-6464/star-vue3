@@ -42,7 +42,3 @@ const classes = classNames('btn', {
 })
 
 </script>
-
-<style lang="scss">
-
-</style>
